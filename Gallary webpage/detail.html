@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Detail</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="instagram.png" alt="logo" class="logo"></a>
+        <a href="#"><h1 class="title">GALLERY</h1></a>
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="Search anything">
+            <input type="submit" value="SEARCH" class="search">
+        </form>
+    </nav>
+    <section>
+        <h1 class="heading">&lt;DETAIL FOR - <span id="image_id"></span>/&gt;</h1>
+        <div class="detail">
+            <img src="" alt="primary" id="detail_image">
+            <div class="content">
+                <h1 class="description" id="description_text"></h1>
+                <br />
+                <h3>Uploaded by @<span id="username"></span></h3>
+                <br />
+                <h4>Date- <span id="upload_date"></span></h4>
+                <br />
+                <h5><span id="like_count"></span> Likes (<span id="view_count"></span> Views)</h5>
+             
+                <h1 class="description" id="alt_description"></h1>
+                
+                <h5>Base Color</h5>
+                <br/>
+                <div class="image_color" id="image_color">
+                    <span id="color_text"></span>
+                </div>
+                <br />
+             
+                <a target="_blank" id="download_link" class="button">&lt;DOWNLOAD/&gt;</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="#">Gallery</a>
+        <h5>Designed and developed by JOE</h5>
+        <a href="#"><h5>Github</h5></a>
+    </footer>
+    <script src="assets/common.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>
